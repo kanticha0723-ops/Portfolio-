@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio | Kanticha</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Tahoma", sans-serif;
+    background: #f5f7fb;
+    color: #333;
+    line-height: 1.8;
+}
+
+header {
+    background: #183b63;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    font-size: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+nav a:hover {
+    color: #f6d58b;
+}
+
+.hero {
+    background: linear-gradient(135deg,#183b63,#477ba9);
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.profile {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 32px;
+}
+
+.hero p {
+    margin-top: 10px;
+}
+
+section {
+    padding: 55px 10%;
+}
+
+.section-title {
+    text-align: center;
+    color: #183b63;
+    margin-bottom: 30px;
+    font-size: 27px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 15px #0000000d;
+}
+
+.card h3 {
+    color: #285a86;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    gap: 20px;
+}
+
+.gallery {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    background: #183b63;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.button {
+    display: inline-block;
+    background: #f0c879;
+    color: #183b63;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@media(max-width:600px) {
+    header {
+        justify-content: center;
+        gap: 10px;
+    }
+    nav {
+        text-align: center;
+    }
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+    .hero h1 {
+        font-size: 25px;
+    }
+    section {
+        padding: 40px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>MY PORTFOLIO</h2>
+    <nav>
+        <a href="#about">ประวัติ</a>
+        <a href="#education">การศึกษา</a>
+        <a href="#activities">กิจกรรม</a>
+        <a href="#awards">ผลงาน</a>
+    </nav>
+</header>
+
+<!-- หน้าปก -->
+<div class="hero">
+    <img src="profile.jpg" class="profile"
+    alt="รูปโปรไฟล์">
+
+    <h1>PORTFOLIO</h1>
+    <h2>แฟ้มสะสมผลงาน</h2>
+
+    <p>นางสาวกันติชา จันทศรี</p>
+    <p>หลักสูตรบริหารธุรกิจ สาขาการจัดการโลจิสติกส์</p>
+
+    <a href="#about" class="button">
+        เข้าชมแฟ้มสะสมผลงาน
+    </a>
+</div>
+
+<!-- ประวัติส่วนตัว -->
+<section id="about">
+    <h2 class="section-title">ประวัติส่วนตัว</h2>
+
+    <div class="card">
+        <h3>ข้อมูลส่วนตัว</h3>
+        <p>ชื่อ : นางสาวกันติชา จันทศรี</p>
+        <p>ชื่อเล่น : ............</p>
+        <p>วันเกิด : ............</p>
+        <p>กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6</p>
+        <p>แผนการเรียน : วิทยาศาสตร์ - คณิตศาสตร์</p>
+        <p>โรงเรียน : ทุ่งใหญ่เฉลิมราช</p>
+    </div>
+</section>
+
+<!-- ประวัติการศึกษา -->
+<section id="education">
+    <h2 class="section-title">ประวัติการศึกษา</h2>
+
+    <div class="card">
+        <h3>ระดับมัธยมศึกษาตอนปลาย</h3>
+        <p>โรงเรียนทุ่งใหญ่เฉลิมราช</p>
+        <p>แผนการเรียนวิทยาศาสตร์ - คณิตศาสตร์</p>
+    </div>
+</section>
+
+<!-- เหตุผลที่เลือกเรียน -->
+<section id="reason">
+    <h2 class="section-title">เหตุผลที่เลือกศึกษาต่อ</h2>
+
+    <div class="card">
+        <p>
+        ดิฉันมีความสนใจในด้านการจัดการโลจิสติกส์
+        เพราะเป็นสาขาที่เกี่ยวข้องกับการวางแผน
+        การจัดการ การขนส่ง และการบริหารทรัพยากร
+        ซึ่งเป็นทักษะที่สามารถนำไปใช้ในการทำงานจริงได้
+        ดิฉันจึงอยากพัฒนาความรู้และความสามารถ
+        เพื่อนำไปต่อยอดในอนาคต
+        </p>
+    </div>
+</section>
+
+<!-- กิจกรรม -->
+<section id="activities">
+    <h2 class="section-title">กิจกรรมที่เข้าร่วม</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="activity1.jpg" class="gallery"
+            alt="กิจกรรมสภานักเรียน">
+            <h3>กิจกรรมสภานักเรียน</h3>
+            <p>ฝึกการทำงานเป็นทีม การวางแผน
+            และการประสานงานร่วมกับผู้อื่น</p>
+        </div>
+
+        <div class="card">
+            <img src="activity2.jpg" class="gallery"
+            alt="กิจกรรมโรงเรียน">
+            <h3>กิจกรรมภายในโรงเรียน</h3>
+            <p>เรียนรู้การแบ่งหน้าที่และการจัดการกิจกรรม</p>
+        </div>
+
+        <div class="card">
+            <img src="activity3.jpg" class="gallery"
+            alt="กิจกรรมจิตอาสา">
+            <h3>กิจกรรมจิตอาสา</h3>
+            <p>ฝึกความรับผิดชอบและการทำงานร่วมกับชุมชน</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ผลงาน -->
+<section id="awards">
+    <h2 class="section-title">ผลงานและเกียรติบัตร</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="award1.jpg" class="gallery"
+            alt="เกียรติบัตรที่ 1">
+            <h3>เกียรติบัตรที่ 1</h3>
+            <p>รายละเอียดผลงาน</p>
+        </div>
+
+        <div class="card">
+            <img src="award2.jpg" class="gallery"
+            alt="เกียรติบัตรที่ 2">
+            <h3>เกียรติบัตรที่ 2</h3>
+            <p>รายละเอียดผลงาน</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- เป้าหมาย -->
+<section id="goal">
+    <h2 class="section-title">เป้าหมายในอนาคต</h2>
+
+    <div class="card">
+        <p>
+        เป้าหมายของดิฉันคือการได้เข้าศึกษาในสาขา
+        การจัดการโลจิสติกส์ เพื่อพัฒนาความรู้
+        และทักษะด้านการบริหารจัดการ
+        และนำความรู้ที่ได้รับไปประกอบอาชีพ
+        ที่มั่นคงในอนาคต
+        </p>
+    </div>
+</section>
+
+<footer>
+    <h3>THANK YOU</h3>
+    <p>ขอบคุณที่เข้าชมแฟ้มสะสมผลงาน</p>
+    <p>MY PORTFOLIO © 2026</p>
+</footer>
+
+</body>
+</html>
